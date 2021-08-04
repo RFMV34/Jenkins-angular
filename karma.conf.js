@@ -26,12 +26,12 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeCI'],
+    browsers: ['ChromeHeadlessCI'],
     singleRun: true,
     restartOnFileChange: true,
     customLaunchers: {
-      ChromeCI: {
-        base: 'Chrome',
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadless',
         flags: [
           '--headless',
           '--disable-gpu',
