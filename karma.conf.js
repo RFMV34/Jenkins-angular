@@ -36,7 +36,9 @@ module.exports = function (config) {
           '--headless',
           '--disable-gpu',
           '--no-sandbox',
-          '--remote-debugging-port=9222'
+          '--user-data-dir=/tmp/chrome-test-profile',
+          '--disable-web-security',
+          //'--remote-debugging-port=9222'
         ]
       }
     }
