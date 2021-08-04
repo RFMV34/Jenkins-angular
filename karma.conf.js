@@ -26,14 +26,14 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromiumHeadless'],
+    browsers: ['ChromeCI'],
     singleRun: true,
     restartOnFileChange: true,
     customLaunchers: {
-      ChromeHeadless: {
-        base: 'ChromiumHeadless',
+      ChromeCI: {
+        base: 'Chrome',
         flags: [
-          //'--headless',
+          '--headless',
           '--disable-gpu',
           '--no-sandbox',
           '--user-data-dir=/tmp/chrome-test-profile',
