@@ -13,6 +13,9 @@ pipeline {
         stage('Unit tests') {
             steps { sh 'npm run-script test' }
         }
+        stage('E2E tests') {
+            steps { sh 'npm run-script e2e' }
+        }
       }
     }
 
