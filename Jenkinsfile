@@ -19,7 +19,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm run-script build'
-        archiveArtifacts artifacts: './dist', fingerprint: true
+        archiveArtifacts artifacts: 'dist', fingerprint: true
       }
     }
   }
